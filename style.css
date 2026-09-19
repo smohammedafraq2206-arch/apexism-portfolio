@@ -1,1 +1,91 @@
-/* APEXISM Styles */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+
+:root {
+    --black: #17130f;
+    --dark: #211b15;
+    --brown: #5b4634;
+    --cream: #eee5d7;
+    --beige: #d8c7b2;
+    --white: #f8f5ef;
+    --line: rgba(248,245,239,0.16);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.navbar {
+    height: 88px;
+    padding: 0 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(23,19,15,0.88);
+    backdrop-filter: blur(18px);
+}
+
+.logo,
+.footer-logo {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.logo span,
+.footer-logo span {
+    color: var(--beige);
+}
+
+nav {
+    display: flex;
+    gap: 34px;
+}
+
+nav a {
+    font-size: 13px;
+    color: #c8beb2;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--white);
+}
+
+.nav-button {
+    border: 1px solid rgba(248,245,239,0.35);
+    padding: 12px 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: var(--cream);
+    color: var(--black);
+}
+
+.hero {
+    min-height: 88vh;
+    padding: 10vw 8vw;
+    display:
